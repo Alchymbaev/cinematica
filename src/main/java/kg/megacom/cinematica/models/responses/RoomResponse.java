@@ -1,0 +1,17 @@
+package kg.megacom.cinematica.models.responses;
+
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
+import java.util.List;
+import java.util.Set;
+
+@Setter
+@Getter
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class RoomResponse {
+    Long id;
+    String name;
+    Set<RoomMovieResponse> roomMovieIDs;
+
+}
